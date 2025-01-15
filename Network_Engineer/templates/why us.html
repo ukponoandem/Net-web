@@ -1,0 +1,221 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static "style2.css" %}">
+        <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+    <body>
+       
+        <nav class='Navbar'>
+          
+            <div class='logo'>
+                <img src="{% static "images\logo.jpg" %}" alt="Image 1"><h1> NETWORK</h1>
+            </div>
+           
+            
+            
+
+                <div class="menu-icon" id="menu-icon">
+                    &#9776; <!-- This is the hamburger icon -->
+                </div>
+                
+                 
+
+                <div class="close-btn" id="close-btn">
+                    &#10006; <!-- This is the X icon -->
+                </div> 
+
+                        <ul class="list" id="navbar-list">
+                        <li class='content'><a href=" {% url "Home" %}">Home</a></li>
+                        <li class="dropdown">
+                        About Us
+                        <ul class="dropdown-content">
+                            <li><a href="{% url "who_we_are" %} ">Who We Are</a></li>
+                            <li><a href="{% url "Our_Team" %} ">Our Team</a></li>
+                            <li><a href="{% url "How_we_operate" %} ">How we operate</a></li>
+                            <li><a href="{% url "Health_and_safety" %} ">Health and Safety</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class='dropdown'>
+                     What we do
+                     <ul class="dropdown-contents">
+                     <li><a href="{% url "G_implementation" %} ">5G Implementation</a></li>
+                     <li><a href="{% url "Communication_system" %} ">Communication system</a></li>
+                     <li><a href="{% url "Data_implementation" %} ">Data_implementation</a></li>
+                     <li><a href="{% url "Telecommunication" %} ">Telecommunication</a></li>
+                     <li><a href="{% url "Design_network" %} ">Design Network</a></li>
+                     <li><a href="{% url "Disaster_recovery" %} ">disasters recovery implementation</a></li>
+                     <li><a href="{% url "Edge_computer_network" %} ">Edge Computer Network</a></li>
+                     <li><a href="{% url "Local_area" %} ">Local Area Setup</a></li>
+                     <li><a href="{% url "Network_automation" %} ">Network Automation Setup</a></li>
+                     <li><a href="{% url "Network_Virtualization" %} ">Network Function Virtualization(NFV)</a></li>
+                     <li><a href="{% url "Network_Integration" %} ">Network_Integration</a></li>
+                     <li><a href="{% url "Network_Traffic_Analysis" %} ">Network_Traffic_Analysis</a></li>
+                     
+                     <li><a href="{% url "Network_Security" %} ">Network Security implementation</a></li>
+                     <li><a href="{% url "Voip_Network" %} ">Voip_Network</a></li>
+                     <li><a href="{% url "Vpn_Implementation" %} ">Vpn Implementation</a></li>
+                     <li><a href="{% url "Wide_Area_Network" %} ">Wide_Area_Network</a></li>
+                     <li><a href="{% url "Wifi_Implementation" %} ">Wifi_Implementation</a></li>
+                     
+                     <li><a href="{% url "Wireless_Design" %} ">Wireless_Design</a></li>
+                     <li><a href="{% url "Enterprise_Network" %} ">Enterprise_Network</a></li>
+                     <li><a href="{% url "Remote_Network_Monitoring" %} ">Remote_Network_Monitoring</a></li>
+                     </ul>
+                    </li>
+                    <li class='content'><a href="{% url "project" %} ">Project/Sector</a></li>
+                    <li class='content'><a href="{% url "why_us" %} ">Why Us</a></li>
+                    <li class='content'><a href="{% url "contact" %} ">Contact</a></li>
+                
+                </ul>
+            </nav>
+
+            <a href="https://wa.me/+2349161248397" target="_blank" id="whatsapp-button">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat with us on WhatsApp" />
+              </a>
+    
+            
+<div class="why-header">
+      
+<div class="why-image">
+      <img src="{% static 'con_image/worker.jpg' %}" alt="Image 2" >
+    </div>
+    <h1>Why Us?</h1>
+</div>
+
+<div class="why-text">
+      <h3>Expertise and Experience</h3>
+      <ul>
+        <li>What We Offer: Our team is composed of highly qualified professionals with years of hands-on experience in network engineering.</li>
+            <li>Why It Matters: When you choose us, you benefit from our in-depth knowledge of various networking technologies, allowing us to solve complex problems with precision and efficiency.
+            </li>
+      </ul>
+      <h3> Comprehensive Solutions</h3>
+      <ul>
+        <li>What We Offer: We provide end-to-end network services, including network design, installation, maintenance, security, and troubleshooting.
+            <h2 class='view-text'><a href="{% url "project" %} ">View-Project</a></h2>
+        </li>
+            <li>Why It Matters: Whether you need a complete network infrastructure set-up or require ongoing support for an existing system, we cover all aspects, ensuring everything runs smoothly.
+            </li>
+      </ul>
+
+      <h3> Customized Approach</h3>
+      <ul>
+        <li>
+            What We Offer: We tailor solutions based on your specific needs, goals, and the scale of your business.</li>
+            <li>Why It Matters: One-size-fits-all solutions don’t work. By offering customized services, we ensure that your network infrastructure aligns perfectly with your unique business requirements, providing maximum efficiency.
+            </li>
+      </ul>
+
+      <h3> Cutting-Edge Technology</h3>
+      <ul>
+        <li>
+            What We Offer: Our engineers stay up-to-date with the latest trends and innovations in networking, including SDN (Software-Defined Networking), cloud technologies, and IoT.[see more]<h2 class='view-text'><a href="{% url "project" %} ">View-Project</a></h2>
+        </li>
+            <li>
+                Why It Matters: With constantly evolving technology, staying ahead of the curve ensures your network is future-proofed, optimized for performance, and ready for emerging trends that could benefit your business.
+            </li>
+      </ul>
+
+      <h3>  Reliable Customer Support</h3>
+      <ul>
+        <li>
+            Our dedicated support team is always available to assist with network issues, answer queries, and provide troubleshooting.
+        </li>
+            <li>
+                Continuous support ensures your network runs without interruptions. Should any issues arise, we’re ready to respond quickly, minimizing downtime and ensuring your business operations stay on track.
+            </li>
+      </ul>
+
+      <h3>  Proven Track Record</h3>
+      <ul>
+        <li>
+            A history of successful network implementations across various industries, from small startups to large enterprises.
+        </li>
+            <li>
+                Our proven success shows that we can handle projects of any size. Our clients trust us to deliver high-quality, reliable network solutions every time.
+            </li>
+      </ul>
+      
+      <h3> Security Focus</h3>
+      <ul>
+        <li>
+            We prioritize network security in all of our projects by implementing robust protection measures such as firewalls, encryption, and regular security audits.
+        </li>
+            <li>
+                In today’s digital landscape, safeguarding your data is critical. Our security-first approach ensures that your network remains protected against cyber threats, reducing risks and ensuring compliance with industry standards.
+
+            </li>
+        </ul>
+  
+      <h3> Conclusion: Why Choose Us?</h3>
+      <ul>
+        <li>
+            From expert knowledge to personalized solutions and cutting-edge technologies, we’ve built a strong foundation of reliability and customer satisfaction. We’re committed to delivering value at every stage of your network journey—from design to ongoing maintenance and support. Let us handle your network needs so you can focus on growing your business with confidence.
+        </li>
+
+    </ul>
+</div>
+
+
+<footer>
+
+    <div class="footer-form">
+    <h1>Get In Touch With Net.com</h1>
+    
+    <form method="POST"  action="email_sender/">
+        {% csrf_token %}
+        <input type='text' name='First_name' placeholder="First-Name" class="types"/>
+        <input type='text' name='Last_name' placeholder="Last-Name"  class="types" /><br>
+        <input type='email' name='email' placeholder="Email"  class="types" />
+        <input type='number' name='number' placeholder="Phone-Number"  class="types" /><br>
+        <textarea name="Message" placeholder="Message" class="messages" ></textarea><br>
+        {% comment %} <input type='submit' class='sending'/> {% endcomment %}
+    
+        <input type="hidden" name="page" value="Net.com Website" />
+
+        <input type='submit' value="Send" class='sender'/>
+   </form>
+    </div>
+    
+                <div class="footer-head">
+                <div class="logo-header">
+                    <img src="{% static 'image/logo.jpg' %}" alt="Image 2">  <h1 class="maain-header">Net.com</h1>
+            </div>
+                
+    <div class="icon">
+        <a href='https://web.facebook.com/profile.php?id=100089205093571'class='social-icon' ><i class="fab fa-facebook-f"></i></a>
+        {% comment %} <a href='https://wa.me/2349161248397' class='social-icon' > <i class="fab fa-whatsapp"></i></a> {% endcomment %}
+        <a href='tel:+2349161248397' class='social-icon'><i class="fas fa-phone"></i></a>
+    </div>
+    </div>
+            
+        </div>
+            </footer>
+    <div class="last-footer">
+            <div class="year">
+                ©<p>Net.com</p>  <span id='current-year'></span> 
+            </div> 
+    
+        <div class="last" >
+             <p class="footer-end">All Rights Reserved. Made With <i class="fas fa-heart"></i>  By <a href='https://portfoilo-370i.onrender.com/'>Ukpono Andem </a> </p>
+        </div>
+    </div>
+    </div>
+
+
+      <script src="{% static "scripts.js" %}"></script>
+    </body>
+</html>

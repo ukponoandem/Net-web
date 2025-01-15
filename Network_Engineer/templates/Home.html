@@ -1,0 +1,298 @@
+ {% load static %}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static "style.css" %}">
+        <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+    <body>
+
+
+    
+        
+       
+        <nav class='Navbar'>
+          
+            <div class='logo'>
+                <img src="{% static "images\logo.jpg" %}" alt="Image 1"><h1> NETWORK</h1>
+            </div>
+           
+            
+            
+
+                <div class="menu-icon" id="menu-icon">
+                    &#9776; <!-- This is the hamburger icon -->
+                </div>
+                
+                 
+
+                <div class="close-btn" id="close-btn">
+                    &#10006; <!-- This is the X icon -->
+                </div> 
+                        <ul class="list" id="navbar-list">
+                        <li class='content'><a href=" {% url "Home" %}">Home</a></li>
+                        <li class="dropdown">
+                        About Us 
+                        <ul class="dropdown-content">
+                            <li><a href="{% url "who_we_are" %} ">Who We Are </a></li>
+                            <li><a href="{% url "Our_Team" %} ">Our Team</a></li>
+                            <li><a href="{% url "How_we_operate" %} ">How we operate</a></li>
+                            <li><a href="{% url "Health_and_safety" %} ">Health and Safety</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class='dropdown'>
+                     What we do
+                     <ul class="dropdown-contents">
+                     <li><a href="{% url "G_implementation" %} ">5G Implementation</a></li>
+                     <li><a href="{% url "Communication_system" %} ">Communication system</a></li>
+                     <li><a href="{% url "Data_implementation" %} ">Data_implementation</a></li>
+                     <li><a href="{% url "Telecommunication" %} ">Telecommunication</a></li>
+                     <li><a href="{% url "Design_network" %} ">Design Network</a></li>
+                     <li><a href="{% url "Disaster_recovery" %} ">disasters recovery implementation</a></li>
+                     <li><a href="{% url "Edge_computer_network" %} ">Edge Computer Network</a></li>
+                     <li><a href="{% url "Local_area" %} ">Local Area Setup</a></li>
+                     <li><a href="{% url "Network_automation" %} ">Network Automation Setup</a></li>
+                     <li><a href="{% url "Network_Virtualization" %} ">Network Function Virtualization(NFV)</a></li>
+                     <li><a href="{% url "Network_Integration" %} ">Network_Integration</a></li>
+                     <li><a href="{% url "Network_Traffic_Analysis" %} ">Network_Traffic_Analysis</a></li>
+                     
+                     <li><a href="{% url "Network_Security" %} ">Network Security implementation</a></li>
+                     <li><a href="{% url "Voip_Network" %} ">Voip_Network</a></li>
+                     <li><a href="{% url "Vpn_Implementation" %} ">Vpn Implementation</a></li>
+                     <li><a href="{% url "Wide_Area_Network" %} ">Wide_Area_Network</a></li>
+                     <li><a href="{% url "Wifi_Implementation" %} ">Wifi_Implementation</a></li>
+                     
+                     <li><a href="{% url "Wireless_Design" %} ">Wireless_Design</a></li>
+                     <li><a href="{% url "Enterprise_Network" %} ">Enterprise_Network</a></li>
+                     <li><a href="{% url "Remote_Network_Monitoring" %} ">Remote_Network_Monitoring</a></li>
+                     </ul>
+                    </li>
+                    <li class='content'><a href="{% url "project" %} ">Project/Sector</a></li>
+                    <li class='content'><a href="{% url "why_us" %} ">Why Us</a></li>
+                    <li class='content'><a href="{% url "contact" %} ">Contact</a></li>
+                
+                </ul>
+            </nav>
+        
+    
+
+        <a href="https://wa.me/+2349161248397" target="_blank" id="whatsapp-button">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat with us on WhatsApp" />
+          </a>
+
+<div class="welcome-text">
+{% comment %} <h1 class="popup-text">WELCOME TO NET.COM</h1> {% endcomment %}
+</div>
+
+<div class='carousel-container'>
+    <div class="carousel">
+        <div class='sub-header'>
+            <div class="sub-img">
+                <div class="container">
+                <h1 class="pop-up">WE Design Furture Connecting<span class='colo'>Communities</span> </h1>
+            </div>
+                <div class="image-slider">
+                    {% comment %} <img src="{% static 'image/net-pep1.jpg' %}" alt="Image 2" > {% endcomment %}
+                 <img src="{% static 'image/worker3.jpg' %}" alt="Image 2" >
+                
+                </div>
+            </div>         {% comment %} </div>
+         <img src="{% static 'images/network.jpg' %}" alt="Image 2" class='images-carousel'>
+        <img src="{% static 'images/team net.jpg' %}" alt="Image 1" class='images-carousel'>
+        <img src="{% static 'images/lerning1.jpg' %}" alt="Image 2" class='images-carousel'>
+        <img src="{% static 'images/team network.jpg' %}" alt="Image 2"class='images-carousel'> 
+    </div>  {% endcomment %}
+</div>
+
+<div class='main-header'>
+<div class='main-images'>
+    <img src="{% static 'images/afican guy.jpg' %}" alt="Image 2"class='images-carousel'> 
+</div>
+<div class='main-text'>
+<h1>Empowering the future of construction with creativity and technology.</h1>
+<h3>
+    As the preferred partner for our clients, Net.com is recognized for its expertise in building telecommunication and utility networks in collaboration with leading service providers, enabling seamless global connectivity.</h3>
+<p class='main-text'>"Net.com has a strong reputation for delivering exceptional results in the Network and infrastructure sectors. With a wealth of experience working on numerous high-profile infrastructure projects throughout the Africa, they have built a solid track record of success. Their expertise spans various industries, including traffic management, rail, telecommunications, and public services. Net.com is known for its commitment to innovation, employing the latest technologies and best practices to ensure that every project is completed efficiently, on time, and within budget.</p>
+
+   <p> Their team of skilled professionals is dedicated to providing tailored solutions that meet the unique needs of each client. They prioritize sustainability and environmental responsibility in all their projects, ensuring that their work not only meets current demands but also supports future growth. With a proven ability to manage complex projects, Net.com is a trusted partner for both public and private sector clients, ensuring the seamless integration of infrastructure systems that drive growth and productivity across the UK."</p> 
+</div>
+</div>
+<h2 class='project-h2'>See Our Project</h2>
+<div class='project-header'>
+    <div class='project-images'>
+             <img src="{% static 'image/power.jpg' %}" alt="Image 2">
+             {% comment %} <p>Power Requirement</p> {% endcomment %}
+            </div>
+            <div class='project-images'>
+             <img src="{% static 'image/sub.jpg' %}" alt="Image 2">
+             {% comment %} <p>Wifi implementation</p> {% endcomment %}
+            </div>
+             {% comment %} <div class='project-images'>
+             <img src="{% static 'img/security2.jpg' %}" alt="Image 2">
+             <p>Network Security</p>
+            </div>
+            <div class='project-images'>
+            <img src="{% static 'images/vpn setup.png' %}" alt="Image 2">
+            <p>Virtual Private Network(VPN) Setup</p>
+           </div>
+           <div class='project-images'>
+           <img src="{% static 'images/sub.jpg' %}" alt="Image 2">
+           <p>Virtual Private Network(VPN) Setup</p>
+          </div> {% endcomment %}
+
+          <div class='project-imagess'>
+            <img src="{% static 'image/ipv.jpg' %}" alt="Image 2" class="ipv6">
+          </div>
+          <div class='project-images'>
+            <img src="{% static 'image/wifi.jpg' %}" alt="Image 2">
+          </div>
+          <div class='project-images'>
+            <img src="{% static 'image/cloud.jpg' %}" alt="Image 2">
+          </div>
+          <div class='project-images'>
+            <img src="{% static 'image/network.jpg' %}" alt="Image 2">
+          </div>
+        </div>
+
+        <h2 class='view-text'><a href="{% url "project" %} ">View-Project</a></h2>
+         
+       
+            <div class="team-1">
+
+            {% comment %} <img src="{% static 'img/team-c.jpg' %}" alt="Image 2"> {% endcomment %}
+            <img src="{% static 'img/team1.jpg' %}" alt="Image 2">
+         
+        </div>
+      
+        <h1 class="team-text">We Work Together  As a team</h1>
+
+        <div class="count-header">
+            <div class="count-main">
+                <img src="{% static 'img/project.jpg' %}" alt="Image 2">
+                <h1 class="count-num">50+</h1>
+                <p class="count-text">Completed Project</p>
+            </div>
+
+            <div class="count-main">
+                <img src="{% static 'img/net-team.jpg' %}" alt="Image 2">
+                <h1 class="count-num">30+</h1>
+                <p class="count-text">People Employed</p>
+            </div>
+
+
+            <div class="count-main">
+                <img src="{% static 'img/net-work.jpg' %}" alt="Image 2">
+                <h1 class="count-num">10+</h1>
+                <p class="count-text">Years Experience</p>
+            </div>
+
+            <div class="count-main">
+                <img src="{% static 'img/center.jpg' %}" alt="Image 2">
+                <h1 class="count-num">40+</h1>
+                <p class='count-text'>Operation Center</p>
+            </div>
+        </div>
+
+
+<div class="conclusion-header">
+        <div class="conclusion">
+            <img src="{% static 'image/me.jpg' %}" alt="Image 2">
+        </div>
+        <div class="conclusion-text" >
+        <h1 >Our Version</h1>
+        <p>To establish and maintain advanced, state-of-the-art service networks that consistently exceed expectations. We aim to be the trusted partner of choice for our clients by delivering innovative, efficient, and safe solutions that are centered around the needs of our customers. Through continuous improvement, we strive to foster lasting relationships, enhance customer satisfaction, and drive mutual success in every project we undertake.</p>
+
+        <ul>
+            <li>
+                To create cutting-edge service networks and be the preferred partner for our clients by providing safe, innovative, and high-quality solutions that are tailored to meet their unique needs.
+            </li>
+        </ul>
+    </div>
+        </div>
+        <footer>
+
+<div class="footer-form">
+<h1>Get In Touch With Net.com</h1>
+
+<form method="POST"  action="email_sender/">
+    {% csrf_token %}
+    <input type='text' name='First_name' placeholder="First-Name" class="types"/>
+    <input type='text' name='Last_name' placeholder="Last-Name"  class="types" /><br>
+    <input type='email' name='email' placeholder="Email"  class="types" />
+    <input type='number' name='number' placeholder="Phone-Number"  class="types" /><br>
+    <textarea name="Message" placeholder="Message" class="messages" ></textarea><br>
+    {% comment %} <input type='submit' class='sending'/> {% endcomment %}
+
+    <input type="hidden" name="page" value="Net.com Website" />
+
+    <input type='submit' value="Send" class='sender'/>
+</form>
+</div>
+
+            <div class="footer-head">
+            <div class="logo-header">
+                <img src="{% static 'image/logo.jpg' %}" alt="Image 2">  <h1 class="maain-header">Net.com</h1>
+        </div>
+            {% comment %} <div class="Footer-header">
+            <div class="footer-main">
+            <h2>Telephone</h2>
+        
+            {% comment %} <p>09161248397</p> {% endcomment %}
+       
+        
+
+            {% comment %} <h2>Address</h2> {% endcomment %}
+        
+            {% comment %} <p>29 thomas udoekong street Atan offot uyo Akwaibom State</p> {% endcomment %}
+       
+        
+       
+            {% comment %} <h2>Email</h2> {% endcomment %}
+        
+            {% comment %} <p>ukponoadem@email.com</p> {% endcomment %}
+      
+        
+            {% comment %} <h2>Contact With Us</h2>
+        </div>
+<div class="footer-sub">
+<p>09161248397</p>
+
+<P>Thomas udoekong street Atan offot uyo</P>
+<p>ukponoadem@gmail.com</p> {% endcomment %}
+<div class="icon">
+    <a href='https://web.facebook.com/profile.php?id=100089205093571'class='social-icon' ><i class="fab fa-facebook-f"></i></a>
+    {% comment  %} <a href='https://wa.me/2349161248397' class='social-icon' > <i class="fab fa-whatsapp"></i></a> {% endcomment %}
+    <a href='tel:+2349161248397' class='social-icon'><i class="fas fa-phone"></i></a>
+</div>
+</div>
+
+
+
+    
+        
+    </div>
+        </footer>
+<div class="last-footer">
+        <div class="year">
+            ©<p>Net.com</p>  <span id='current-year'></span> 
+        </div> 
+
+    <div class="last" >
+         <p class="footer-end">All Rights Reserved. Made With <i class="fas fa-heart"></i>  By <a href='https://portfoilo-370i.onrender.com/'>Ukpono Andem </a> </p>
+    </div>
+</div>
+</div>
+
+        <script src="{% static "scripts.js" %}"></script>
+    </body>
+</html>

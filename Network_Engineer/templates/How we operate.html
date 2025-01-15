@@ -1,0 +1,210 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static "style6.css" %}">
+        <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+    <body>
+        
+
+        <nav class='Navbar'>
+          
+            <div class='logo'>
+                <img src="{% static "images\logo.jpg" %}" alt="Image 1"><h1> NETWORK</h1>
+            </div>
+           
+            
+            
+
+                <div class="menu-icon" id="menu-icon">
+                    &#9776; <!-- This is the hamburger icon -->
+                </div>
+                                 
+
+                <div class="close-btn" id="close-btn">
+                    &#10006; <!-- This is the X icon -->
+                </div> 
+                        <ul class="list" id="navbar-list">
+                        <li class='content'><a href=" {% url "Home" %}">Home</a></li>
+                        <li class="dropdown">
+                        About Us
+                        <ul class="dropdown-content">
+                            <li><a href="{% url "who_we_are" %} ">Who We Are</a></li>
+                            <li><a href="{% url "Our_Team" %} ">Our Team</a></li>
+                            <li><a href="{% url "How_we_operate" %} ">How we operate</a></li>
+                            <li><a href="{% url "Health_and_safety" %} ">Health and Safety</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class='dropdown'>
+                     What we do
+                     <ul class="dropdown-contents">
+                     <li><a href="{% url "G_implementation" %} ">5G Implementation</a></li>
+                     <li><a href="{% url "Communication_system" %} ">Communication system</a></li>
+                     <li><a href="{% url "Data_implementation" %} ">Data_implementation</a></li>
+                     <li><a href="{% url "Telecommunication" %} ">Telecommunication</a></li>
+                     <li><a href="{% url "Design_network" %} ">Design Network</a></li>
+                     <li><a href="{% url "Disaster_recovery" %} ">disasters recovery implementation</a></li>
+                     <li><a href="{% url "Edge_computer_network" %} ">Edge Computer Network</a></li>
+                     <li><a href="{% url "Local_area" %} ">Local Area Setup</a></li>
+                     <li><a href="{% url "Network_automation" %} ">Network Automation Setup</a></li>
+                     <li><a href="{% url "Network_Virtualization" %} ">Network Function Virtualization(NFV)</a></li>
+                     <li><a href="{% url "Network_Integration" %} ">Network_Integration</a></li>
+                     <li><a href="{% url "Network_Traffic_Analysis" %} ">Network_Traffic_Analysis</a></li>
+                     
+                     <li><a href="{% url "Network_Security" %} ">Network Security implementation</a></li>
+                     <li><a href="{% url "Voip_Network" %} ">Voip_Network</a></li>
+                     <li><a href="{% url "Vpn_Implementation" %} ">Vpn Implementation</a></li>
+                     <li><a href="{% url "Wide_Area_Network" %} ">Wide_Area_Network</a></li>
+                     <li><a href="{% url "Wifi_Implementation" %} ">Wifi_Implementation</a></li>
+                     
+                     <li><a href="{% url "Wireless_Design" %} ">Wireless_Design</a></li>
+                     <li><a href="{% url "Enterprise_Network" %} ">Enterprise_Network</a></li>
+                     <li><a href="{% url "Remote_Network_Monitoring" %} ">Remote_Network_Monitoring</a></li>
+                     </ul>
+                    </li>
+                    <li class='content'><a href="{% url "project" %} ">Project/Sector</a></li>
+                    <li class='content'><a href="{% url "why_us" %} ">Why Us</a></li>
+                    <li class='content'><a href="{% url "contact" %} ">Contact</a></li>
+                
+                </ul>
+            </nav>
+            <a href="https://wa.me/+2349161248397" target="_blank" id="whatsapp-button">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat with us on WhatsApp" />
+              </a>
+    
+
+<div class="how-header">
+<p>
+    {% comment %} we take pride in our structured and efficient approach to network engineering.{% endcomment %}
+</p> Our operation is built on a foundation of collaboration, innovation, and a client-first mindset. We believe that successful network solutions come from a careful blend of expertise, technology, and strategic planning. Here's how we operate to deliver top-tier network services: 
+<div class="how-images">
+    <img src="{% static 'con_image/13.jpg' %}" alt="Image 2" >
+</div>
+</div>     
+
+<div class="how-main">
+
+    <p> Why Our Approach Works</p> 
+<ul>
+ 
+<li>
+    Efficiency: Our streamlined processes ensure that your network is up and running smoothly with minimal disruption.
+
+</li>
+
+<li>
+    Customization: We create solutions tailored specifically to your business requirements.
+</li>
+
+<li>Scalability: Our designs allow for future growth, ensuring that your network can scale as your business evolves.</li>
+
+<li>Security: With cybersecurity threats on the rise, we place a strong emphasis on securing your network at every stage.</li>
+
+
+
+</ul>
+<p>
+    In short, our approach at Net.com is simple but effective: we listen, design with purpose, implement with precision, and support for the long term. We are your trusted partner in building and maintaining the network infrastructure that powers your business success.
+    </p>
+<div class="how-image">
+    <img src="{% static 'con_image/2.jpg' %}" alt="Image 2" >
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+        
+            <footer>
+
+                <div class="footer-form">
+                <h1>Get In Touch With Net.com</h1>
+                
+                <form method="POST"  action="email_sender/">
+                    {% csrf_token %}
+                    <input type='text' name='First_name' placeholder="First-Name" class="types"/>
+                    <input type='text' name='Last_name' placeholder="Last-Name"  class="types" /><br>
+                    <input type='email' name='email' placeholder="Email"  class="types" />
+                    <input type='number' name='number' placeholder="Phone-Number"  class="types" /><br>
+                    <textarea name="Message" placeholder="Message" class="messages" ></textarea><br>
+                    {% comment %} <input type='submit' class='sending'/> {% endcomment %}
+                
+                    <input type="hidden" name="page" value="Net.com Website" />
+
+                    <input type='submit' value="Send" class='sender'/>
+               </form>
+                </div>
+                
+                            <div class="footer-head">
+                            <div class="logo-header">
+                                <img src="{% static 'image/logo.jpg' %}" alt="Image 2">  <h1 class="maain-header">Net.com</h1>
+                        </div>
+                            {% comment %} <div class="Footer-header">
+                            <div class="footer-main">
+                            <h2>Telephone</h2>
+                        
+                            {% comment %} <p>09161248397</p> {% endcomment %}
+                       
+                        
+                
+                            {% comment %} <h2>Address</h2> {% endcomment %}
+                        
+                            {% comment %} <p>29 thomas udoekong street Atan offot uyo Akwaibom State</p> {% endcomment %}
+                       
+                        
+                       
+                            {% comment %} <h2>Email</h2> {% endcomment %}
+                        
+                            {% comment %} <p>ukponoadem@email.com</p> {% endcomment %}
+                      
+                        
+                            {% comment %} <h2>Contact With Us</h2>
+                        </div>
+                <div class="footer-sub">
+                <p>09161248397</p>
+                
+                <P>Thomas udoekong street Atan offot uyo</P>
+                <p>ukponoadem@gmail.com</p> {% endcomment %}
+                <div class="icon">
+                    <a href='https://web.facebook.com/profile.php?id=100089205093571'class='social-icon' ><i class="fab fa-facebook-f"></i></a>
+                    {% comment  %} <a href='https://wa.me/2349161248397' class='social-icon' > <i class="fab fa-whatsapp"></i></a> {% endcomment %}
+                    <a href='tel:+2349161248397' class='social-icon'><i class="fas fa-phone"></i></a>
+                </div>
+                </div>
+                
+                
+                
+                    
+                        
+                    </div>
+                        </footer>
+                <div class="last-footer">
+                        <div class="year">
+                            ©<p>Net.com</p>  <span id='current-year'></span> 
+                        </div> 
+                
+                    <div class="last" >
+                         <p class="footer-end">All Rights Reserved. Made With <i class="fas fa-heart" class="heart"></i>  By <a href='https://portfoilo-370i.onrender.com/'>Ukpono Andem </a> </p>
+                    </div>
+                </div>
+                </div>
+                
+                        <script src="{% static "scripts.js" %}"></script>
+    </body>
+</html>
